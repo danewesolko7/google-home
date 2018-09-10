@@ -1,0 +1,124 @@
+@import 'normalize.css';
+
+body {
+  background: #ffffff;
+  color: #222222;
+  font-family: arial,sans-serif;
+}
+
+a {
+  font-size: 13px;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+header,
+nav,
+section,
+footer {
+  width: 100%;
+}
+
+header,
+section,
+footer {
+  display: flex;
+}
+
+nav,
+footer {
+  line-height: 40px;
+}
+
+nav ul,
+section ul,
+footer ul {
+  width: 100%;
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+nav ul,
+footer ul {
+  justify-content: space-between;
+}
+nav ul li,
+footer ul li {
+  display: inline-block;
+}
+nav ul li a,
+footer ul li a {
+  color: #000;
+  opacity: 0.75;
+}
+
+header {
+  margin-bottom: 65px;
+}
+
+nav ul {
+  margin: 10px 0;
+}
+nav ul .shop {
+  margin-left: 20px;
+}
+nav ul .user {
+  margin-right: 20px;
+}
+nav ul .shop li a,
+nav ul .user li a {
+  padding: 7px;
+}
+
+section .main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  margin: 0 auto;
+}
+section img {
+  height: 92px;
+  width: 272px;
+  padding-top: 70px;
+  margin: 0 auto;
+}
+section ul {
+  justify-content: center;
+}
+section button {
+  height: 36px;
+  line-height: 27px;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  color: #757575;
+  cursor: default;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 11px 4px;
+  padding: 0 16px;
+  text-align: center;
+}
+section button:hover {
+  border: 1px solid #c6c6c6;
+  background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  color: #222;
+}
+
+footer {
+  bottom: 0;
+  position: absolute;
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+}
+footer ul .business li a {
+  padding-left: 27px;
+}
+footer ul .legal li a {
+  padding-right: 27px;
+}
